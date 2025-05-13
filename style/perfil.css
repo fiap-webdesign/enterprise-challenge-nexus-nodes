@@ -1,0 +1,197 @@
+/* ===== Reset & Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #FFFFFF;  /* fundo branco como na página Dicas */
+}
+
+/* ===== Container como Grid ===== */
+.perfil-page .container {
+  display: grid;
+  grid-template-columns: 350px minmax(0, 1fr);
+  /* sidebar sempre 350px, content ocupa o resto */
+  min-height: 100vh;
+}
+
+/* ===== Sidebar (idêntica à de Dicas) ===== */
+.sidebar {
+  background-color: #F7F2FF;
+  width: 350px;
+  padding: 40px 20px;
+}
+.sidebar-logo {
+  width: 160px;
+  display: block;
+  margin-bottom: 40px;
+}
+.sidebar-nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+.sidebar-nav li {
+  margin-bottom: 24px;
+}
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #BFA5E8;     /* itens não ativos */
+  font-size: 30px;
+  font-weight: 600;
+}
+.sidebar-nav a .icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+.sidebar-nav li.active a {
+  color: #36162C;     /* item ativo */
+}
+
+/* ===== Conteúdo Principal ===== */
+.perfil-page .content {
+  background-color: #FFFFFF;
+  padding: 40px;
+  overflow: auto;
+}
+
+/* ===== Header do Perfil ===== */
+.perfil-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #F7F2FF;
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 40px;
+}
+.perfil-info {
+  display: flex;
+  flex-direction: column;
+}
+.perfil-info h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #36162C;
+  margin-bottom: 8px;
+}
+.perfil-info .idade {
+  font-size: 16px;
+  font-weight: 600;
+  color: #36162C;
+  margin-bottom: 16px;
+}
+.stats {
+  display: flex;
+  gap: 48px;
+  margin-bottom: 24px;
+}
+.stat-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: #36162C;
+}
+.stat-label {
+  font-size: 14px;
+  color: #4D4D4D;
+}
+.edit-btn {
+  padding: 8px 20px;
+  background: transparent;
+  border: 1px solid #36162C;
+  color: #36162C;
+  border-radius: 999px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.edit-btn:hover {
+  opacity: 0.8;
+}
+.perfil-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* ===== Vídeos do Mês ===== */
+.videos-mes h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #36162C;
+  margin-bottom: 24px;
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  gap: 32px;
+  justify-content: center;
+  margin: 0 auto 40px;
+}
+.video-thumb img {
+  display: block;
+  width: auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* ===== Botões Globais ===== */
+.btn {
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: opacity 0.3s;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+/* Botão “Ver Todos” */
+.view-all-btn {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 16px 0;
+  background-color: #B3F4E1;
+  color: #592549;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+  .perfil-page .container {
+    grid-template-columns: 1fr;
+  }
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .perfil-page .content {
+    padding: 20px;
+  }
+  .perfil-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+  .stats {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .video-grid {
+    grid-template-columns: repeat(2, max-content);
+    gap: 24px;
+  }
+}

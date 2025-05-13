@@ -1,0 +1,135 @@
+/* ===== Container Geral ===== */
+.dicas-page, html, body {
+  margin: 0; padding: 0;
+  width: 100%; height: 100%;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== Sidebar ===== */
+.sidebar {
+  background-color: #F7F2FF;
+  width: 350px;
+  padding: 40px 20px;
+}
+.sidebar-logo {
+  width: 160px;
+  margin-bottom: 40px;
+  display: block;
+}
+.sidebar-nav ul {
+  list-style: none;
+}
+.sidebar-nav li {
+  margin-bottom: 24px;
+}
+.sidebar-nav a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #BFA5E8;            /* itens não ativos */
+  font-size: 30px;
+  font-weight: 600;
+}
+.sidebar-nav a .icon {
+  width: 24px; height: 24px;
+  margin-right: 12px;
+}
+.sidebar-nav li.active a {
+  color: #36162C;            /* item “Dicas” ativo */
+}
+
+/* ===== Conteúdo ===== */
+.content {
+  flex: 1;
+  background-color: #FFFFFF;
+  padding: 40px;
+}
+.page-header .quality {
+  font-size: 12px;
+  font-weight: 600;
+  color: #BFA5E8;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 8px;
+}
+.page-header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #36162C;
+  margin-bottom: 32px;
+}
+
+/* ===== Cards ===== */
+.cards .card {
+  margin-bottom: 40px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.card-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card-body {
+  padding: 24px;
+}
+.card-body .badge {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 600;
+  color: #36162C;
+  border: 1px solid #36162C;
+  border-radius: 12px;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.card-body h2 {
+  font-size: 24px;
+  color: #36162C;
+  margin-bottom: 16px;
+}
+.card-body p {
+  font-size: 16px;
+  color: #4D4D4D;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.card-btn {
+  display: inline-block;
+  background-color: #B3F4E1;
+  color: #592549;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.card-btn:hover {
+  opacity: 0.8;
+}
+
+/* ===== Responsivo (exemplo) ===== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .content {
+    padding: 20px;
+  }
+}

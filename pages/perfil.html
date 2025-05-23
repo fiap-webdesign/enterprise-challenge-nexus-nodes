@@ -6,17 +6,24 @@
   <title>Loop 60+ — Perfil</title>
 
   <!-- Fonte Nunito Sans -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
-    rel="stylesheet"
-  />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
 
   <!-- CSS global + sidebar + layout de perfil -->
   <link rel="stylesheet" href="../style/perfil.css"/>
+
+  <style>
+    /* Estilo opcional para o telefone */
+    .telefone {
+      display: block;
+      margin: 8px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
 </head>
 <body class="perfil-page">
   <div class="container">
-    <!-- SIDEBAR (igualzinho ao da Dicas) -->
+    <!-- SIDEBAR -->
     <aside class="sidebar">
       <img src="../assets/logo_roxa.png" alt="Loop 60+" class="sidebar-logo"/>
       <nav class="sidebar-nav">
@@ -35,7 +42,8 @@
       <!-- HEADER DO PERFIL -->
       <section class="perfil-header">
         <div class="perfil-info">
-          <h1>JOSÉ CARLOS</h1>
+          <h1 id="nomeUsuario">Nome do Usuário</h1>
+          <p class="telefone">Telefone: <span id="telefoneUsuario">N/A</span></p>
           <span class="idade">65 ANOS</span>
           <div class="stats">
             <div class="stat">
@@ -50,7 +58,7 @@
           <button class="btn-outline edit-btn">Editar Perfil</button>
         </div>
         <div class="perfil-image">
-          <img src="../assets/user-photo.png" alt="Foto de José Carlos">
+          <img src="../assets/user-photo.png" alt="Foto do Usuário">
         </div>
       </section>
 
@@ -69,5 +77,11 @@
       </section>
     </main>
   </div>
+
+  <!-- Script para preencher dados do localStorage -->
+  <script>
+    document.getElementById('nomeUsuario').textContent = localStorage.getItem('nomeUsuario') || 'Usuário';
+    document.getElementById('telefoneUsuario').textContent = localStorage.getItem('telefoneUsuario') || 'N/A';
+  </script>
 </body>
 </html>

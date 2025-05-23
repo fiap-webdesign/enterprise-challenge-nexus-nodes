@@ -60,7 +60,15 @@
             color: #b0b0b0;
             cursor: pointer;
             transition: color 0.2s;
+
         }
+
+        a {
+        text-decoration: none;
+        font-family: "Nunito Sans", sans-serif; 
+        font-size: 1.5rem;
+        font-weight:normal;    
+    }
 
         .nav-item.active {
             color: #5d2a5e;
@@ -76,9 +84,6 @@
             font-size: 1.2rem;
         }
 
-        .nav-item span {
-            font-weight: 800;
-        }
 
         /* Main Content */
         .main-content {

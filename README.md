@@ -57,6 +57,12 @@ O nome **Loop 60+** representa a ideia de continuidade, movimento e renovação.
 Veja a interface do projeto no Figma:  
 [https://www.figma.com/design/HtzezROsDKWfBY2LMWRzyp/Loop60-?node-id=4-1680&t=7sJdv2Yx4PThQkQR-1](https://www.figma.com/design/HtzezROsDKWfBY2LMWRzyp/Loop60-?node-id=4-1680&t=7sJdv2Yx4PThQkQR-1)
 
+
+
+## Video com Pitch do Projeto
+
+https://youtu.be/1jBA_nBkDO4
+
 ---
 
 ## Em Desenvolvimento
@@ -70,3 +76,4 @@ Veja a interface do projeto no Figma:
 
 **Loop 60+**  
 Porque viver bem é para sempre.
+

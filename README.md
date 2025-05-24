@@ -45,10 +45,12 @@ O nome **Loop 60+** representa a ideia de continuidade, movimento e renovação.
 
 ## Design com Foco em Acessibilidade
 
-- Interface limpa e objetiva, com poucos passos por tela.  
-- Tipografia grande e de fácil leitura.  
-- Cores com bom contraste e elementos visuais claros.  
-- Botões e menus otimizados para toques em telas sensíveis.
+Pensamos cada detalhe para atender bem nosso público:
+
+- Layout clean, colorido e alegre.
+- Botões grandes e fontes com ótima leitura.
+- Instruções claras e navegação simplificada.
+- Conteúdo visual rico, que facilita o engajamento.
 
 ---
 
@@ -65,14 +67,7 @@ https://youtu.be/1jBA_nBkDO4
 
 ---
 
-## Em Desenvolvimento
 
- As próximas etapas incluem:
-
- 
-- Desenvolvimento front-end com foco em acessibilidade.
-
----
 
 **Loop 60+**  
 Porque viver bem é para sempre.

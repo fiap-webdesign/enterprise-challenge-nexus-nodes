@@ -63,7 +63,7 @@ Veja a interface do projeto no Figma:
 
 ## Video com Pitch do Projeto
 
-https://youtu.be/1jBA_nBkDO4
+[https://youtu.be/1jBA_nBkDO4](https://www.youtube.com/watch?v=9a5OlLqalCw)
 
 ---
 

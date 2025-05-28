@@ -1,0 +1,375 @@
+/* ===== Página Ranking ===== */
+.ranking-page,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: #F7F2FF;
+    width: 350px;
+    padding: 40px 20px;
+}
+
+.sidebar-logo {
+    width: 160px;
+    margin-bottom: 40px;
+    display: block;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+}
+
+.sidebar-nav li {
+    margin-bottom: 24px;
+}
+
+.sidebar-nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #BFA5E8;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.sidebar-nav a .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.sidebar-nav li.active a {
+    color: #36162C;
+}
+
+.content {
+    flex: 1;
+    background-color: #FFFFFF;
+    padding: 40px;
+}
+
+.page-header .quality {
+    font-size: 12px;
+    font-weight: 600;
+    color: #BFA5E8;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #36162C;
+    margin-bottom: 32px;
+}
+
+.ranking-list .user-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+}
+
+.user-item .position {
+    background-color: #B3F4E1;
+    color: #36162C;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 14px;
+    margin-right: 16px;
+}
+
+.user-item div {
+    flex-grow: 1;
+}
+
+.avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.premios {
+    margin-top: 40px;
+}
+
+.premios h2 {
+    font-size: 24px;
+    color: #36162C;
+    margin-bottom: 24px;
+}
+
+.premios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.premio-card {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.premio-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+}
+
+.premio-card .pos {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: #B3F4E1;
+    color: #36162C;
+    padding: 6px 12px;
+    font-weight: 700;
+    border-radius: 999px;
+}
+
+.premio-card .label {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    /* ===== Página Ranking ===== */
+    .ranking-page,
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .container {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: row;
+    }
+
+    .sidebar {
+        background-color: #F7F2FF;
+        width: 350px;
+        padding: 40px 20px;
+    }
+
+    .sidebar-logo {
+        width: 160px;
+        margin-bottom: 40px;
+        display: block;
+    }
+
+    .sidebar-nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .sidebar-nav li {
+        margin-bottom: 24px;
+    }
+
+    .sidebar-nav a {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #BFA5E8;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .sidebar-nav a .icon {
+        width: 24px;
+        height: 24px;
+        margin-right: 12px;
+    }
+
+    .sidebar-nav li.active a {
+        color: #36162C;
+    }
+
+    .content {
+        flex: 1;
+        background-color: #FFFFFF;
+        padding: 40px;
+    }
+
+    .page-header .quality {
+        font-size: 12px;
+        font-weight: 600;
+        color: #BFA5E8;
+        text-transform: uppercase;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .page-header h1 {
+        font-size: 32px;
+        font-weight: 700;
+        color: #36162C;
+        margin-bottom: 32px;
+    }
+
+    .ranking-list .user-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #eee;
+        padding: 12px 0;
+    }
+
+    .user-item .position {
+        background-color: #B3F4E1;
+        color: #36162C;
+        font-weight: 700;
+        padding: 4px 12px;
+        border-radius: 999px;
+        font-size: 14px;
+        margin-right: 16px;
+    }
+
+    .user-item div {
+        flex-grow: 1;
+    }
+
+    .avatar {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .premios {
+        margin-top: 40px;
+    }
+
+    .premios h2 {
+        font-size: 24px;
+        color: #36162C;
+        margin-bottom: 24px;
+    }
+
+    .premios-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 20px;
+    }
+
+    .premio-card {
+        position: relative;
+        border-radius: 16px;
+        overflow: hidden;
+    }
+
+    .premio-card img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 16px;
+    }
+
+    .premio-card .pos {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: #B3F4E1;
+        color: #36162C;
+        padding: 6px 12px;
+        font-weight: 700;
+        border-radius: 999px;
+    }
+
+    .premio-card .label {
+        position: absolute;
+        bottom: 12px;
+        left: 12px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column;
+        }
+
+        .sidebar {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            background-color: #F7F2FF;
+            padding: 12px 0;
+            border-top: 1px solid #ddd;
+            z-index: 1000;
+        }
+
+        .sidebar-logo {
+            display: none;
+        }
+
+        .sidebar-nav ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .sidebar-nav li {
+            margin: 0;
+            text-align: center;
+            flex: 1;
+        }
+
+        .sidebar-nav a {
+            flex-direction: column;
+            align-items: center;
+            font-size: 12px;
+            color: #BFA5E8;
+        }
+
+        .sidebar-nav a .icon {
+            margin: 0 auto 4px auto;
+        }
+
+        .sidebar-nav li.active a {
+            color: #36162C;
+        }
+
+        .content {
+            padding: 24px;
+            padding-bottom: 80px;
+        }
+    }
+}

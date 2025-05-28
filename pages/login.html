@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loop 60+ — Login</title>
+
+  <!-- Google Font Nunito Sans -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- seu CSS principal -->
+  <link rel="stylesheet" href="../style/login.css"/>
+</head>
+<body class="login-page"> 
+  <form class="login-form" id="loginForm">
+    <!-- logo -->
+    <img src="../assets/logo_roxa.png" alt="Loop 60+" class="login-logo"/>
+
+    <!-- campo nome -->
+    <div class="form-group">
+      <label for="name">DIGITE SEU NOME</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Nome"
+        required
+      />
+    </div>
+
+    <!-- campo telefone -->
+    <div class="form-group">
+      <label for="phone">DIGITE SEU TELEFONE</label>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="(00) 0 0000-0000"
+        required
+      />
+    </div>
+
+    <!-- botão Entrar -->
+    <button type="submit" class="btn-login">ENTRAR</button>
+
+    <!-- link de cadastro -->
+    <a href="#" class="btn-outline">PRIMEIRA VEZ POR AQUI?</a>
+  </form>
+  <script src="../js/login.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* ===== Reset & Base ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* força fundo rosa em toda a viewport */
+  html, body {
+    height: 100%;
+    width: 100%;
+    background-color: #F7F2FF !important;
+    font-family: 'Nunito Sans', sans-serif;
+  }
+  
+  /* ===== Login Page ===== */
+  body.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* centraliza e limita o formulário */
+  .login-form {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  /* logo */
+  .login-logo {
+    width: 220px;
+    margin: 0 auto 40px;
+    display: block;
+  }
+  
+  /* labels */
+  .form-group label {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    color: #301929;             /* roxo escuro exato */
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  
+  /* inputs */
+  .form-group input {
+    width: 100%;
+    padding: 16px 20px;
+    border-radius: 999px;
+    border: 1px solid #BFA5E8;  /* cinza-roxo exato */
+    background: transparent;
+    font-size: 16px;
+    color: #301929;             /* texto digitado roxo */
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  .form-group input::placeholder {
+    color: #BFA5E8;             /* placeholder cinza-roxo */
+    opacity: 1;
+  }
+  
+  /* botão “ENTRAR” */
+  .btn-login {
+    width: 100%;
+    padding: 16px 0;
+    background-color: #B3F4E1;  /* verde-água exato */
+    color: #592549;             /* texto roxo exato */
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+  }
+  .btn-login:hover {
+    opacity: 0.8;
+  }
+  
+  /* link “PRIMEIRA VEZ POR AQUI?” */
+  .btn-outline {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    background: transparent;
+    border: 1px solid #BFA5E8;  /* mesma cor do input */
+    border-radius: 999px;
+    color: #BFA5E8;             /* mesma cor do input */
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: opacity 0.3s;
+  }
+  .btn-outline:hover {
+    opacity: 0.8;
+  }
+  
+  /* responsividade leve */
+  @media (max-width: 480px) {
+    .login-form {
+      padding: 0 10px;
+    }
+  }
+  

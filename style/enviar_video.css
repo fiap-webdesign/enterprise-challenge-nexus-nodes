@@ -1,0 +1,159 @@
+/* ===== Página Enviar Vídeo ===== */
+.video-page, html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #fff;
+  }
+  
+  .container {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+  }
+  
+  .sidebar {
+    background-color: #F7F2FF;
+    width: 350px;
+    padding: 40px 20px;
+  }
+  .sidebar-logo {
+    width: 160px;
+    margin-bottom: 40px;
+    display: block;
+  }
+  .sidebar-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidebar-nav li {
+    margin-bottom: 24px;
+  }
+  .sidebar-nav a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #BFA5E8;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .sidebar-nav a .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 12px;
+  }
+  .sidebar-nav li.active a {
+    color: #36162C;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 40px;
+    background-color: #fff;
+  }
+  .page-header .quality {
+    font-size: 12px;
+    font-weight: 600;
+    color: #BFA5E8;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 8px;
+  }
+  .page-header h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #36162C;
+    margin-bottom: 32px;
+  }
+  
+  .upload-box {
+    background-color: #F7F2FF;
+    border-radius: 12px;
+    padding: 100px 0;
+    text-align: center;
+  }
+  .upload-button {
+    width: 220px;
+    height: 220px;
+    background-color: #B3F4E1;
+    border-radius: 50%;
+    border: none;
+    color: #36162C;
+    font-weight: 700;
+    font-size: 28px;
+    cursor: pointer;
+  }
+  
+  /* Responsivo */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      width: 100%;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: #F7F2FF;
+      padding: 12px 0;
+      border-top: 1px solid #ddd;
+      z-index: 1000;
+    }
+  
+    .sidebar-logo {
+      display: none;
+    }
+  
+    .sidebar-nav ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+  
+    .sidebar-nav li {
+      margin: 0;
+      text-align: center;
+      flex: 1;
+    }
+  
+    .sidebar-nav a {
+      flex-direction: column;
+      align-items: center;
+      font-size: 12px;
+      color: #BFA5E8;
+    }
+  
+    .sidebar-nav a .icon {
+      margin: 0 auto 4px auto;
+    }
+  
+    .sidebar-nav li.active a {
+      color: #36162C;
+    }
+  
+    .content {
+      padding: 24px;
+      padding-bottom: 80px;
+    }
+  
+    .page-header h1 {
+      font-size: 28px;
+    }
+  
+    .upload-box {
+      padding: 60px 0;
+    }
+  
+    .upload-button {
+      width: 160px;
+      height: 160px;
+      font-size: 22px;
+    }
+  }
+  

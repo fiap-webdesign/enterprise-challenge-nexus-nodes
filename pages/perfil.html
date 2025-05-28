@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loop 60+ — Perfil</title>
+
+  <!-- Fonte Nunito Sans -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet"/>
+
+  <!-- CSS global + sidebar + layout de perfil -->
+  <link rel="stylesheet" href="../style/perfil.css"/>
+
+  <style>
+    /* Estilo opcional para o telefone */
+    .telefone {
+      display: block;
+      margin: 8px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+  </style>
+</head>
+<body class="perfil-page">
+  <div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <img src="../assets/logo_roxa.png" alt="Loop 60+" class="sidebar-logo"/>
+      <nav class="sidebar-nav">
+        <ul>
+          <li><a href="./exercicio.html"><img src="../assets/icon-exercicio.png" class="icon"/><span>Exercício</span></a></li>
+          <li><a href="./dicas.html"><img src="../assets/icon-dicas.png" class="icon"/><span>Dicas</span></a></li>
+          <li><a href="./enviar_video.html"><img src="../assets/icon-video.png" class="icon"/><span>Enviar Vídeo</span></a></li>
+          <li><a href="./ranking.html"><img src="../assets/icon-ranking.png" class="icon"/><span>Ranking</span></a></li>
+          <li class="active"><a href="./perfil.html"><img src="../assets/icon-perfil.png" class="icon"/><span>Perfil</span></a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="content">
+      <!-- HEADER DO PERFIL -->
+      <section class="perfil-header">
+        <div class="perfil-info">
+          <h1 id="nomeUsuario">Nome do Usuário</h1>
+          <p class="telefone">Telefone: <span id="telefoneUsuario">N/A</span></p>
+          <span class="idade">65 ANOS</span>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat-number">32</span>
+              <span class="stat-label">Vídeos Enviados</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number">5º</span>
+              <span class="stat-label">Ranking Mensal</span>
+            </div>
+          </div>
+          <button class="btn-outline edit-btn">Editar Perfil</button>
+        </div>
+        <div class="perfil-image">
+          <img src="../assets/user-photo.png" alt="Foto do Usuário">
+        </div>
+      </section>
+
+      <!-- VÍDEOS DO MÊS -->
+      <section class="videos-mes">
+        <h2>VÍDEOS DO MÊS</h2>
+        <div class="video-grid">
+          <div class="video-thumb"><img src="../assets/video1.png" alt=""></div>
+          <div class="video-thumb"><img src="../assets/video2.png" alt=""></div>
+          <div class="video-thumb"><img src="../assets/video3.png" alt=""></div>
+          <div class="video-thumb"><img src="../assets/video4.png" alt=""></div>
+          <div class="video-thumb"><img src="../assets/video5.png" alt=""></div>
+          <div class="video-thumb"><img src="../assets/video6.png" alt=""></div>
+        </div>
+        <button class="btn view-all-btn">Ver Todos</button>
+      </section>
+    </main>
+  </div>
+
+  <!-- Script para preencher dados do localStorage -->
+  <script>
+    document.getElementById('nomeUsuario').textContent = localStorage.getItem('nomeUsuario') || 'Usuário';
+    document.getElementById('telefoneUsuario').textContent = localStorage.getItem('telefoneUsuario') || 'N/A';
+  </script>
+</body>
+</html>

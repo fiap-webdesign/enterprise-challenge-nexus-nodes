@@ -66,8 +66,10 @@ Veja a interface do projeto no Figma:
 [https://youtu.be/1jBA_nBkDO4](https://www.youtube.com/watch?v=9a5OlLqalCw)
 
 ---
+## Link do Deploy 
 
-
+[
+](https://enterprise-challenge-nexus-n-joao-pedro-dantas-dcarlis-projects.vercel.app/)
 
 **Loop 60+**  
 Porque viver bem é para sempre.
